@@ -1,0 +1,625 @@
+.classroom-lesson-show-component{
+  @extend %content-menu-padding
+}
+
+.classroom-lesson-show-component{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1800px;
+
+  .classroom-sidebar{
+    height: calc(100vh - 90px);
+    font-size: .85rem;
+    background: $gray-dark-color;
+    z-index: 2;
+    flex: 0 0 300px;
+
+    position: fixed;
+    width: 300px;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out;
+
+    .classroom-sidebar-wrapper{
+      @include scrollbarMini($background: $gray-dark-color, $color: black);
+      overflow: hidden;
+      overflow-y: scroll;
+      height: 100%;
+    }
+
+    .navbar-trigger{
+      position: absolute;
+      bottom: 20px;
+      right: -60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: $primary-color;
+      cursor: pointer;
+
+      i{
+        font-size: 1.1rem;
+      }
+
+      .trigger-close{
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+          width: 22px;
+          height: 2px;
+          background: white;
+          border-radius: 999px;
+        }
+
+        &:after{
+          transform: translate(-50%, -50%) rotate(135deg);
+        }
+      }
+    }
+    
+    .classroom-sidebar-container{
+      // width: 48px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .cs-head-container{
+      position: fixed;
+      z-index: 3;
+      // width: 48px;
+      width: 293px;
+      overflow: hidden;
+    }
+
+    .cs-head, .cs-lessons{
+      width: 100%;;
+    }
+
+    .cs-head{
+      display: flex;
+      padding: 11px 10px 9px;
+      // background-color: rgba(white, 0.05);
+      background-color: #1c293d;
+      cursor: pointer;
+
+      .cs-head-avatar{
+        flex-basis: 30px;
+        margin-right: 13px;
+      }
+
+      .cs-head-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .cs-units{
+      margin: 54px 0;
+    }
+
+    .cs-list-item{
+      position: relative;
+      display: flex;
+      padding: 15px 12px;
+
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 21px;
+        width: 2px;
+        height: 100%;
+        background: $primary-color;
+      }
+
+      .csli-icon, .csli-index{
+        position: relative;
+        width: 19px;
+        height: 19px;
+        flex: 0 0 19px;
+        background: $primary-color;
+        padding: 3px;
+        border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .7rem;
+        font-weight: 600;
+        margin-right: 20px;
+        color: $gray-dark-color;
+      }
+
+      .csli-icon{
+        background-color: $gray-dark-color;
+      }
+
+      .csli-title{
+        font-size: .75rem;
+        font-weight: 300;
+      }
+
+      &.is-unit{
+        padding: 20px 12px;
+        
+        .icon-container{
+          background: $gray-dark-color;
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 999px;
+          width: 25px;
+          height: 36px;
+          margin-right: 17px;
+        }
+
+        .csli-icon{
+          height: 32px;
+          width: 21px;
+          padding-left: 2px;
+        }
+
+        .csli-title{
+          margin-top: 9px;
+          font-weight: 600;
+        }
+
+        // &:first-child{
+          &:before{
+            height: 50%;
+          }
+        // }
+      }
+
+      &.is-lesson{
+        cursor: pointer;
+
+        &:hover, &.is-active{
+          background-color: rgba(white, 0.05);
+        }
+
+        &.is-last-child{
+          &:before{
+            height: 50%;
+            bottom: initial;
+            top: 0;
+          }
+        }
+      }
+
+      &.is-disabled{
+        pointer-events: none;
+        cursor: default;
+        // filter: grayscale(1);
+
+        &:before{
+          background-color: #646464;
+        }
+
+        .csli-index{
+          border: solid 2px #646464;
+          background: $gray-dark-color;
+          padding: 0;
+        }
+        
+        *{
+          color: #646464;
+        }
+      }
+    }
+
+    + .navbar-backdrop{
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 300ms ease-in-out;
+    }
+
+    &:before{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh - 90px);
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(2px) !important;
+    }
+
+    &.is-opened{
+      .classroom-sidebar-container, .cs-head-container{
+        width: 100%;
+      }
+    }
+
+    &.is-closed{
+      flex: 0 0 58px;
+
+      .cs-head-container{
+        width: 64px;
+
+        .cs-head-title{
+          display: none;
+        }
+      }
+    }
+
+    &.is-visible{
+      z-index: 99;
+      transform: translateX(0);
+
+      + .navbar-backdrop{
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+
+  .classroom-lesson{
+    @include scrollbarMini;
+
+    padding: 0 20px;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    overflow-y: scroll;
+    max-width: 1000px;
+
+    .classroom-lesson-video{
+    
+      > div{
+        width: 1000px !important;
+        max-width: 100% !important;
+
+        > div{
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+
+    .classroom-lesson-audio{
+      .classroom-lesson-poster{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 30px;
+      }
+    }
+
+    .classroom-lesson-info{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      .cli-title{
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .cli-mentor{
+        display: flex;
+        align-items: center;
+        font-size: 0.85rem;
+        margin-top: 10px;
+
+        img{
+          width: 17px;
+          margin-left: 4px;
+        }
+      }
+
+      .next-button{
+        font-size: 1.1rem;
+      }
+    }
+
+    .classroom-lesson-content{
+      *{
+        color: white;
+        font-family: $font-primary;
+      }
+      span{
+        width: initial !important;
+        height: initial !important;
+
+        img{
+          width: initial !important;
+          height: initial !important;
+          max-width: 400px;
+        }
+      }
+
+      .classroom-lesson-content-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .button{
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+    .classroom-lesson-tabs{
+      min-height: 400px;
+
+      .clt-head{
+        display: flex;
+        margin-top: 40px;
+        border-bottom: solid 1px #444;
+        padding-bottom: 12px;
+
+        .clt-button{
+          margin-right: 12px;
+          border-radius: 8px;
+          padding: 7px 20px 7px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $text-secondary-color;
+          cursor: pointer;
+
+          .clt-head-image{
+            width: 19px;
+            margin-right: 8px;
+          }
+
+          &.is-active{
+            background-color: $gray-dark-color;
+            color: white;
+          }
+        }
+      }
+
+      .clt-content-container{
+        padding: 25px 15px 0;
+        
+        .clt-content{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        
+        .div-comming{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(2px) !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+
+        .clt-content-files{
+          margin-top: 30px;
+          
+          .clt-file{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FAFAFA;
+            padding: 0px 20px;
+            height: 50px;
+            cursor: pointer;
+
+            .filename{
+              display: flex;
+              font-weight: 400;
+
+              i{
+                color: $primary-color;
+                margin-right: 8px;
+              }
+            }
+
+            &:hover{
+              background-color: rgba($primary-color, .2);
+
+              i{
+                color: $primary-color;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    &.lesson-comments{
+      overflow: initial;
+
+      .classroom-lesson-tabs{
+        height: 100%;
+        max-height: 70vh;
+
+        .clt-content-container{
+          background: $color_background_9;
+          height: 100%;
+        }
+      }
+    }
+  }
+    
+  .lesson-comments{
+    padding: 0 15px;
+    min-width: 350px;
+    flex: 1;
+    
+    position: fixed;
+    background: $color_background_9;
+    height: min-content;
+    max-height: 75vh;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 30px;
+
+    transform: translateY(100%);
+    transition: all 300ms ease-in-out;
+
+    .classroom-lesson-tabs-wrapper{
+      @include scrollbarMini($background: $gray-dark-color, $color: black);
+      overflow: hidden;
+      overflow-y: scroll;
+      height: 100%;
+    }
+
+    +.lessons-backdrop{
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 300ms ease-in-out;
+    }
+
+    .classroom-lesson-tabs{
+      min-height: 0;
+    }
+
+    .lesson-comments-form{
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px 15px 35px;
+      background: $color_background_9;
+
+      .textarea-container{
+        position: relative;
+
+        textarea{
+          padding-right: 40px;
+        }
+
+        .submit-comment-button{
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          &:hover{
+            i{
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    .comments-trigger{
+      position: absolute;
+      top: -60px;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: $primary-color;
+      cursor: pointer;
+
+      .trigger-close{
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+          width: 22px;
+          height: 2px;
+          background: white;
+          border-radius: 999px;
+        }
+
+        &:after{
+          transform: translate(-50%, -50%) rotate(135deg);
+        }
+      }
+    }
+
+    &.is-visible{
+      z-index: 99;
+      transform: translateY(0);
+
+      + .lessons-backdrop{
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    .classroom-sidebar{
+      position: relative;
+      transform: none;
+      
+      .navbar-trigger{
+        display: none;
+      }
+
+      + .navbar-backdrop{
+        display: none;
+        pointer-events: none;
+        opacity: 0;
+      }
+    }
+
+    .classroom-lesson{
+      .classroom-lesson-content{
+        .classroom-lesson-content-navbar{
+          .button{
+            width: initial;
+          }
+        }
+      }
+
+      &.lesson-comments{
+        .classroom-lesson-tabs{
+          max-height: initial;
+        }
+      }
+    }
+
+    .lesson-comments{
+      position: relative;
+      height: calc(100vh - 90px);
+      max-height: 100vh;
+      transform: translateY(0);
+      
+      .comments-trigger{
+        display: none;
+      }
+
+      + .lessons-backdrop{
+        display: none;
+        pointer-events: none;
+        opacity: 0;
+      }
+    }
+
+    .classroom-sidebar, .classroom-sidebar:before, .classroom-lesson, .lesson-comments{
+      height: calc(100vh - 135px);
+    }
+  }
+
+  @media(min-width: $media-widescreen-min){
+    .classroom-sidebar, .classroom-sidebar:before, .classroom-lesson, .lesson-comments{
+      height: calc(100vh - 90px);
+    }
+  }
+}

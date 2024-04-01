@@ -1,0 +1,224 @@
+.scan-ecosystem-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: $media-tablet-max){
+        flex-direction: row;
+        justify-content: space-between;
+
+        .scan-ecosystem-graph{
+            width: 47%;
+            
+        }
+        .scan-ecosystem-explanation{
+            width: 40%;
+            text-align: left;
+
+            .scan-ecosystem-explanation-image img{
+                height: 50px;
+                width: 50px;
+                margin-bottom: 2.5%;
+                max-height: 100%;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .scan-ecosystem-explanation-content{
+                align-items: stretch;
+            }
+            .scan-ecosystem-explanation-dev{
+                .buttons{
+                    justify-content: space-between;
+                }
+                
+            }
+            .scan-ecosystem-explanation-explore{
+                justify-content: left;
+            }
+        }
+    }
+}
+
+.scan-ecosystem-graph{
+    width: 100%;
+    max-height: 605px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    margin-bottom: 40px;
+
+    .scan-ecosystem-background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 1;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .scan-ecosystem-rectangulo{
+        z-index: 0;
+        position: absolute;
+        max-width: 50%;
+        height: 100%;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        transform: translate(100%);
+
+        img{
+            width: fit-content;
+        }
+    }
+
+    .scan-ecosystem-items{
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .scan-ecosystem-item {
+            opacity: 0.5;
+            position: absolute;
+            cursor: pointer;
+            width: 8%;
+            height: 8%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p{
+                font-size: 14px;
+                width: max-content;
+            }
+
+            img{
+                margin-bottom: 2px;
+            }
+
+
+            &:nth-child(1){top: 8%;}
+            &:nth-child(2){top: 22%; right: 32%;}
+            &:nth-child(3){top: 27%; left: 10%;}
+            &:nth-child(4){top: 23%; left: 30%;}
+            &:nth-child(5){top: 31%; right: 10%;}
+            &:nth-child(6){top: 45%; left: 22%;}
+            &:nth-child(7){top: 49%; right: 20%;}
+            &:nth-child(8){bottom: 29%; left: 17%;}
+            &:nth-child(9){bottom: 25%; right: 10%;}
+            &:nth-child(10){bottom: 28%; right: 30%;}
+            &:nth-child(11){bottom: 7%; right: 40%;}
+            &:nth-child(12){bottom: 25%; left: 40%;}
+
+            &.is-selected{
+                opacity: 1;
+            }
+
+        }
+    }
+}
+
+.scan-ecosystem-explanation{
+    padding: 60px 40px;
+    width: 100%;
+    border-radius: 33px;
+    height: fit-content;
+    background-color: #131726;
+    text-align: left;
+
+    .scan-ecosystem-explanation-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scan-ecosystem-explanation-image img{
+        height: 50px;
+        width: 50px;
+        margin-bottom: 2.5%;
+        max-height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .scan-ecosystem-explanation-title{
+        margin-bottom: 2.5%;
+        p{
+            font-size: 1.825rem;
+            font-weight: 650;
+            color: #2a63ff;
+        }
+    }
+
+    .scan-ecosystem-explanation-desc{
+        margin-bottom: 1.5%;
+
+        p{
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+    }
+
+    .scan-ecosystem-explanation-more{
+
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #2a63ff;
+        }
+    }
+
+    .scan-ecosystem-explanation-dev{
+        .development-title{
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 1%;
+        }
+        .development-progress{
+            margin-bottom: 2.5%;
+        }
+
+        .buttons{
+            margin-top: 7%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            .button{
+                border-radius: 10px;
+                padding: 3px 40px;
+                font-weight: 600;
+                font-size: 1.1rem;
+
+                &.disabled{
+                    cursor: auto;
+                }
+            }
+        }
+
+    }
+
+    .scan-ecosystem-explanation-explore{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .button{
+            border-radius: 10px;
+            padding: 3px 40px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    }
+}

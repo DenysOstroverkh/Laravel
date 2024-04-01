@@ -1,0 +1,11 @@
+.transaction-checker-component{
+  @media(max-width: $media-mobile-max){
+    .b-table .table-wrapper.has-mobile-cards tr:not([class*=is-]){
+      background-color: rgba(white, 0.15);
+
+      *{
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

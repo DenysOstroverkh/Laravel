@@ -1,0 +1,227 @@
+.search-box-found-item{
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: black;
+    box-shadow: $inset-shadow;
+  }
+}
+
+.searched-token-card-component{
+  display: flex;
+  align-items: flex-start;
+
+  .searched-token-card-logo-container{
+    flex: 0 0 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+
+    img{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+  }
+  
+  .searched-token-card-static-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+
+  &.is-placeholder{
+    .searched-token-card-info-data{
+      width: 100%;
+    }
+
+    .searched-token-card-info-name, .searched-token-card-info-symbol{
+      height: 11px;
+      width: 70%;
+      border-radius: 999px;
+      background: white;
+      margin: 3px 0;
+    }
+
+    .searched-token-card-info-symbol{
+      width: 25%;
+    }
+
+    .searched-token-card-logo-container, .searched-token-card-info-name, .searched-token-card-info-symbol{
+      // Animation
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: placeholderAnimate;
+      background: white; // Fallback
+      background: linear-gradient(to right, white 2%, #AFAFAF 18%, white 33%);
+      background-size: 2200px; // Animation Area
+    }
+  }
+
+  &.is-inline-card{
+    .searched-token-card-info-data{
+      display: flex;
+
+      .searched-token-card-info-symbol{
+        margin-left: 10px;
+      }
+    }
+
+    &.is-wallet{
+      .searched-token-card-info-symbol{
+        display: none;
+      }
+    }
+  }
+
+  &.is-inline-centered-card{
+    align-items: center;
+    
+    .searched-token-card-info-data{
+      display: flex;
+
+      .searched-token-card-info-symbol{
+        margin-left: 10px;
+      }
+    }
+
+    &.is-wallet{
+      .searched-token-card-info-symbol{
+        display: none;
+      }
+    }
+  }
+
+  &.is-large{
+    .searched-token-card-info-data{
+      font-size: 1rem;
+    }
+
+    .searched-token-card-logo-container{
+      flex: 0 0 40px;
+      height: 40px;
+
+      img{
+        width: 40px;
+        height: 40px;
+      }
+
+      .searched-token-image-missing{
+        width: 40px;
+        height: 40px;
+        font-size: 1.35rem;
+      }
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    .searched-token-card-component{
+      align-items: center;
+    }
+
+    &.is-large{
+      .searched-token-card-info-data{
+        font-size: 1.5rem;
+      }
+
+      .searched-token-card-logo-container{
+        flex: 0 0 50px;
+        height: 50px;
+
+        img{
+          width: 50px;
+          height: 50px;
+        }
+
+        .searched-token-image-missing{
+          width: 50px;
+          height: 50px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.searched-token-image-missing{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  // background-color: $primary-color;
+  // box-shadow: 0px 0px 15px $primary-color;
+  background-color: $background-secondary;
+  color: gainsboro !important;
+  box-shadow: 0px 0px 3px white;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.searched-token-card-info-container{
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  font-size: 0.85rem;
+}
+
+.searched-token-card-info-name{
+  font-weight: 700;
+}
+
+.searched-token-card-info-symbol{
+  font-weight: 600;
+  color: $text-secondary-color;
+}
+
+.searched-token-card-info-reports{
+  font-size: .75rem;
+}
+
+.searched-token-card-cancel{
+  background: $background-secondary;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: $inset-shadow;
+  position: relative;
+  cursor: pointer;
+    background-color: lighten($background-secondary, 10);
+
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 20px;
+    background: $text-secondary-color;
+  }
+
+  &:before{
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after{
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover{
+    &:before, &:after{
+      background: #A9A9A9;
+    }
+  }
+}
+
+@keyframes placeholderAnimate {
+    0%{ background-position: -650px 0; }
+    100%{ background-position: 650px 0; }
+}

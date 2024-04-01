@@ -1,0 +1,65 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+// Variables
+@import 'general/variables';
+
+// Third party
+@import '~bulma';
+@import 'buefy/dist/buefy.css';
+@import 'aos/dist/aos.css';
+
+// General
+@import 'general/main';
+@import 'general/utils';
+@import 'general/helpers';
+@import 'general/overrides';
+@import 'general/transitions';
+@import 'general/mixins';
+
+// Web
+@import 'web/web3';
+@import 'web/layout';
+@import 'web/navbar';
+@import 'web/report';
+@import 'web/notfound';
+@import 'web/howtobuy';
+@import 'web/countdown';
+@import 'web/blacklist';
+@import 'web/contentcreators';
+@import 'web/index-coin';
+@import 'web/index-ecosystem';
+@import 'web/referral';
+@import 'web/scanner';
+@import 'web/marketplace';
+@import 'web/gaming';
+@import 'web/stat';
+@import 'web/academy';
+@import 'web/courses';
+@import 'web/staking';
+
+// Scan DeFi
+@import 'scan/raised-bnb';
+@import 'scan/transaction-checker';
+@import 'scan/media-card';
+@import 'scan/search-box';
+@import 'scan/searched-token-card';
+@import 'scan/coin-card';
+@import 'scan/fireflies';
+@import 'scan/modal';
+@import 'scan/tokenomics-card';
+@import 'scan/team-card';
+@import 'scan/referral-table';
+@import 'scan/ranking-table';
+@import 'scan/footer';
+@import 'scan/buy-modal-form';
+@import 'scan/language';
+@import 'scan/alert';
+@import 'scan/comments';
+@import 'scan/twitter';
+@import 'scan/swap';
+
+// Classroom
+@import 'classroom/lesson';
+@import 'classroom/notes';
+

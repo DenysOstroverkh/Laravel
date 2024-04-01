@@ -1,0 +1,231 @@
+.scan-general-info-component-container{
+  padding-top: 90px;
+
+  @media(min-width: $media-tablet-min){
+    padding-top: 135px;
+  }
+
+  @media(min-width: $media-widescreen-min){
+    padding-top: 105px;
+  }
+}
+
+.scanner-token-component{
+  .token-scanner-report-section{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .scanner-token-reports-container{
+      background: $background-secondary;
+      padding: 30px 15px;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+
+    .scanner-token-wallet-balances-container{
+      background: $background-secondary;
+      padding: 30px 20px 10px;
+      border-radius: 20px;
+      margin-top: 30px;
+
+      .searched-token-card-component{
+        max-width: 400px;
+      }
+    }
+
+    @media(min-width: $media-widescreen-min){
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .scanner-token-reports-container{
+        flex: 1;
+        max-width: 900px;
+        margin-left: 50px;
+        margin-top: 0;
+      }
+    }
+    
+    .scanner-token-report-actions {
+      margin-top: 25px;
+      // padding-left: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      span, i{
+        color: $text-secondary-color;
+      }
+
+      span{
+        font-size: 0.8rem;
+        cursor: pointer;
+        margin-left: 25px;
+
+        i{
+          font-size: 1rem;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+
+  .scanner-token-report{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px gainsboro;
+
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+
+  .scanner-token-address{
+    margin-left: 55px;
+    position: relative;
+    bottom: 17px;
+    font-size: 0.65rem;
+  }
+
+  .token-info-prices{
+    display: table;
+    margin: 10px 0 30px;
+
+    .token-info-price-container{
+      display: table-row;
+    }
+
+    .tipc-price, .tipc-percent{
+      display: table-cell;
+      font-size: 1.3rem;
+      padding-top: 10px;
+      padding-right: 25px;
+      font-weight: 700;
+      // filter: blur(4px);
+      // pointer-events: none;
+    }
+
+    .tipc-percent{
+      filter: blur(4px);
+      pointer-events: none; 
+    }
+  }
+
+  .token-actions{
+    margin: 40px 0 0;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scam-chance-container{
+    max-width: 400px;
+  }
+  
+  .scanner-token-report-head{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    .scanner-token-reporter{
+      font-size: .9rem;
+    }
+
+    .scanner-token-report-date{
+      font-size: 0.75rem;
+      margin-left: 38px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  .web-report-complaint{
+    font-size: 0.9rem;
+  }
+
+  .web-report-wallet-complaints-container{
+    max-width: 400px;
+    text-align: center;
+    margin: 20px 0 40px;
+  }
+
+  .scanner-token-report-description{
+    padding-left: 50px;
+    margin-top: 15px;
+    font-size: .9rem;
+  }
+
+  .scan-comment-form{
+    padding: 0;
+  }
+
+  @media(min-width: $media-tablet-min){
+    .token-scanner-report-section{
+      .scanner-token-reports-container{
+        padding: 30px 35px;
+      }
+    }
+
+    .scanner-token-address{
+      font-size: 1rem;
+      margin-left: 65px;
+      // bottom: 5px;
+    }
+
+    .scanner-token-report-head{
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .scanner-token-report-complaints{
+      padding-left: 50px;
+    }
+
+    .report-comments-container{
+      padding-left: 50px;
+    }
+
+    .scan-comment-form{
+      padding-left: 50px;
+    }
+  }
+}
+
+.avatar-wallet{
+  display: flex;
+  align-items: center;
+}
+
+.wallet-logo{
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.report-comments-container{
+  margin-top: 30px;
+
+  .scan-comment-component{
+    border-top: 0;
+    
+    .scan-comment-head-avatar{
+      width: 20px;
+    }
+
+    .scan-comment-head-info{
+      display: flex;
+
+      .scan-comment-user{
+        margin-right: 10px;
+      }
+    }
+  }
+}

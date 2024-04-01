@@ -1,0 +1,130 @@
+.report-explain-text{
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.report-category-container{
+  margin-top: 25px;
+}
+
+.report-category-head{
+  background: white;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  border-radius: 59%;
+
+  i{
+    color: $background-secondary;
+  }
+}
+
+.report-category-info{
+  margin-top: 15px;
+  font-size: .75rem;
+  text-align: center;
+  color: #929292;
+}
+
+.web-report-form-component{
+  .search-box-component{
+    margin-top: 20px;
+    
+    .search-box-found-container{
+      position: relative;
+      left: -10px;
+      top: 0;
+      width: calc(100% + 20px);
+    }
+  }
+
+  .searched-token-card-component{
+    &.is-selected{
+      background-color: black;
+      box-shadow: $inset-shadow;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
+
+  .report-success{
+    i{
+      display: flex;
+      width: fit-content;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: $success-color;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      padding: 20px;
+      margin: 30px auto;
+    }
+
+    &.is-loading{
+      i{
+        background: transparent;
+      }
+    }
+  }
+}
+
+.web-report-complaint{
+  font-size: 0.85rem;
+  margin-bottom: 7px;
+  padding-left: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  font-weight: 600;
+
+  .web-report-complaint-border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background: $primary-color;
+  }
+}
+
+.web-report-modal-form-component{
+  .web-report-form-component{
+    .has-sticky-sibiling{
+      margin-bottom: 30px;
+    }
+
+    .sticky-button-container{
+      // background: linear-gradient(180deg, rgba($background-secondary, 0) 0%, rgba($background-secondary, 0.9) 45%, rgba($background-secondary, 1) 100%);
+      position: sticky;
+      bottom: 0;
+      // padding-top: 70px;
+
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: calc(100% + 40px);
+        height: 110px;
+        background: linear-gradient(180deg, rgba($background-secondary, 0) 0%, rgba($background-secondary, 0.9) 45%, rgba($background-secondary, 1) 100%);
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: -20px;
+        width: calc(100% + 40px);
+        height: 50px;
+        background-color: $background-secondary;
+      }
+    }
+  }
+}

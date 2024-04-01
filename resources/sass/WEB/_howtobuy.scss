@@ -1,0 +1,427 @@
+.modal.is-full-screen{
+  background-color: black;
+  justify-content: flex-start;
+  padding-top: 50px;
+  z-index: 9999;
+
+  .modal-content{
+    width: 100vw;
+    max-height: 100vh !important;
+    min-height: 100vh !important;
+    top: 0 !important;
+    position: absolute;
+  }
+}
+
+.scan-how-to-buy-section{
+  background-color: black;
+  overflow: hidden;
+
+  .scan-how-container{
+    position: relative;
+    // overflow: hidden;
+    padding-top: 50px;
+    min-height: 100vh;
+  }
+
+  .presale-starts-title{
+    font-family: $font-secondary;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .scan-circle-bg-image{
+    position: absolute;
+    width: 700px;
+    right: 0;
+    top: 0;
+    transform: translate(45%, -32%);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .scan-money-bg-image{
+    position: absolute;
+    width: 900px;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 69%);
+    opacity: 0.5;
+  }
+
+
+  .scan-how-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 15px;
+
+    img{
+      width: 125px;
+    }
+  }
+
+  .scan-how-buttons-container{
+    display: flex;
+    margin-top: 60px;
+    max-width: 800px;
+    margin: 40px auto;
+    width: 75vw;
+    flex-direction: column;
+
+    .button{
+      flex: 1;
+      margin: 0 10px;
+      border: solid 3px white;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    .scan-how-image-container{
+      // margin-bottom: 50px;
+
+      img{
+        width: 150px;
+      }
+    }
+
+    .scan-how-buttons-container{
+      flex-direction: row;
+      margin: 60px auto;
+
+      .button{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.scan-how-to-buy-section{
+  .scan-how-section{
+    padding: 100px 0;
+    position: relative;
+  }
+
+  .scan-how-buy-steps{
+    width: 900px;
+    max-width: 85vw;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+
+  .scan-how-free{
+    display: flex;
+    flex-direction: column;
+
+    .scan-how-free-article{
+      background: rgba(0, 0, 0, 0.3);
+      padding: 30px 40px;
+      border-radius: 30px;
+      flex: 1;
+      margin: 0 10px;
+      max-width: 90vw;
+      margin: 20px auto;
+      width: 630px;
+      border: solid 3px white;
+      z-index: 1;
+    }
+
+    .scan-hf-step{
+      color: white;
+      margin-bottom: 8px;
+    }
+  }
+
+  .scan-how-buy-video{
+    display: flex;
+    justify-content: center;
+  }
+
+  .scan-copy-address-input{
+    // background-color: $primary-color;
+    border: solid 3px white;
+    display: flex;
+    justify-content: center;
+    padding: 12px 38px 12px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    span{
+      color: white;
+      font-size: 0.56rem;
+    }
+
+    .scan-copy-address-copy{
+      // background: rgba(black, 0.6);
+      background: $primary-color;
+      border-left: solid 3px white;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      padding: 11px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  }
+
+  .scan-ads{
+    width: 300px;
+    height: 300px;
+    // background: gray;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    max-width: 100%;
+    margin-top: -65px;
+
+    .scan-image-money-square{
+      height: 110%;
+      display: block;
+      margin: auto;
+      position: relative;
+      left: 15px;
+    }
+  }
+
+  .scan-how-buy-image-container img{
+    position: absolute;
+    width: 1000px;
+    left: 0;
+    bottom: 0;
+    transform: translate(-45%, 55%);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @media(min-width: $media-tablet-min){
+    .scan-copy-address-input{
+      padding: 12px 40px 12px 0px;
+
+      span{
+        font-size: 1rem;
+      }
+
+      .scan-copy-address-copy{
+        padding: 16px;
+      }
+    }
+
+    .scan-ads{
+      margin-top: 50px;
+      margin-left: 30px;
+      float: right;
+    }
+  }
+}
+
+
+.scan-how-presale-phase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  max-width: 90vw;
+  margin: auto;
+
+  .phase-text{
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 12vw;
+    z-index: 2;
+    font-weight: 900;
+    font-family: $font-secondary;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .scan-how-presale-option{
+    *{ line-height: 1 }
+
+    position: relative;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 25px;
+
+    .img-top{
+      position: absolute;
+      width: 100px;
+      right: -100px;
+      top: -100px;
+      transform: translate(-50%, 50%);
+    }
+
+    .img-center{
+      display: none;
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      width: 60px;
+      transform: translate(-50%, -50%);
+    }
+
+    .img-bottom{
+      position: absolute;
+      width: 100px;
+      left: -100px;
+      bottom: -100px;
+      transform: translate(50%, -50%);
+    }
+
+    .scan-presale-coin{
+      position: relative;
+      font-family: $font-secondary;
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .scan-presale-price{
+      position: relative;
+      font-family: $font-secondary;
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: white;
+      margin-right: 20px;
+    }
+
+    .scan-presale-left{
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .scan-presale-right{
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      text-align: right;
+
+      .scan-presale-price{
+        direction: rtl;
+        font-size: 1.7rem;
+      }
+
+      .scan-presale-coin{
+        font-size: 1.7rem;
+      }
+    }
+
+    &.is-primary{
+      // background-color: $primary-color;
+      border: solid 10px darken($primary-color, 15);
+      background: $primary-color;
+      background: linear-gradient(225deg, darken($primary-color, 20) 0%, $primary-color 100%);
+    }
+
+    &.is-secondary{
+      // background-color: $secondary-color;
+      border: solid 10px darken($secondary-color, 15);
+      background: $secondary-color;
+      background: linear-gradient(225deg, darken($secondary-color, 20) 0%, $secondary-color 100%);
+    }
+
+    &.is-tertiary{
+      // background-color: $tertiary-color;
+      border: solid 10px darken($tertiary-color, 15);
+      background: $tertiary-color;
+      background: linear-gradient(225deg, darken($tertiary-color, 20) 0%, $tertiary-color 100%);
+    }
+
+    &.is-success{
+      // background-color: $success-color;
+      border: solid 10px darken($success-color, 15);
+      background: $success-color;
+      background: linear-gradient(225deg, darken($success-color, 20) 0%, $success-color 100%);
+    }
+
+    &.is-danger{
+      // background-color: $danger-color;
+      border: solid 10px darken($danger-color, 15);
+      background: $danger-color;
+      background: linear-gradient(225deg, darken($danger-color, 20) 0%, $danger-color 100%);
+    }
+
+    &.is-warning{
+      // background-color: $warning-color;
+      border: solid 10px darken($warning-color, 15);
+      background: $warning-color;
+      background: linear-gradient(225deg, darken($warning-color, 20) 0%, $warning-color 100%);
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    .scan-how-presale-option{
+      margin: 40px 40px 20px;
+      width: 300px;
+      height: 300px;
+
+      .img-top{
+        width: 55%;
+        right: -45%;
+        top: -45%;
+      }
+
+      .img-center{
+        display: block;
+      }
+
+      .img-bottom{
+        width: 55%;
+        left: -45%;
+        bottom: -45%;
+      }
+
+      .scan-presale-left, .scan-presale-right{
+        display: block;
+        margin-bottom: 0;
+      }
+
+      .scan-presale-coin{
+        font-size: 3.5rem;
+      }
+
+      .scan-presale-price{
+        font-size: 2.5rem;
+        margin-right: 0;
+      }
+    }
+
+    .phase-text{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      color: black;
+      font-size: 10vw;
+      font-weight: 900;
+      font-family: $font-secondary;
+      text-shadow: 1px 1px 15px white;
+      opacity: 0.3;
+      transform: translate(-50%, -50%);
+      user-select: none;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+  }
+}

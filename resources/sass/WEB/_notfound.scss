@@ -1,0 +1,119 @@
+.not-found-component{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 25vh;
+
+  .static{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -100px;
+    opacity: 0.05;
+    z-index: 230;
+    user-select: none;
+    user-drag: none;
+  }
+
+  .error{
+    font-weight: 800;
+    text-align: center;
+    font-family: $font-secondary;
+    font-size: 7rem;
+    font-style: italic;
+    animation: noise 2s linear infinite;
+    overflow: default;
+    color: white;
+  }
+
+  .error:after{
+    font-weight: 800;
+    content: '404';
+    font-family: $font-secondary;
+    font-size: 7.3rem;
+    font-style: italic;
+    text-align: center;
+    width: calc(100% + 50px);
+    height: 60px;
+    line-height: 60px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: $primary-color;
+    animation: noise-1 .2s linear infinite;
+  }
+
+  .error:before{
+    font-weight: 800;
+    content: '404';
+    font-family: $font-secondary;
+    font-size: 7.3rem;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: $danger-color;
+    animation: noise-2 .2s linear infinite;
+  }
+
+  .info{
+    font-style: italic;
+    font-family: $font-secondary;
+    font-size: 1em;
+    font-weight: 900;
+    animation: noise-3 1s linear infinite;
+    color: white;
+  }
+
+  .error.coming-soon, .info.coming-soon{
+    animation: none;
+    
+    &:before, &:after{
+      content: none;
+      // content: 'COMING SOON';
+      // font-size: 4rem;
+    }
+  }
+}
+
+@keyframes noise-1{
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes noise-2{
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes noise{
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@keyframes noise-3{
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+}

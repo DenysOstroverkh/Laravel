@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'scammers_worst' => 'Najgorszy Koszmar',
+    'nightmare' => 'Oszustów',
+    'description' => 'Poznaj platformę opracowaną w celu wykrywania i żądania umów lub przedsprzedaży dla zysku, ze szczegółową analizą i narzędziem, które pozwala wykryć oszustwa.',
+    'ecosystem' => 'Kompletny ekosystem',
+    'kill_scammers' => 'dla ZABIJANIA oszustów',
+    'control' => 'Platforma stworzona do kontroli wyłudzonych tokenów',
+    'fill_form' => 'Zgłoś dowolny token, monetę lub przedsprzedaż wypełniając nasz formularz zgłoszeniowy.',
+    'high_value' => 'Możesz również przeciwdziałać temu poprzez stworzenie kontrowersji. Twój raport zostanie wysoko doceniony przez społeczność ScanDeFi.',
+    'keep_safe' => 'Zapewnienie Twojego bezpieczeństwa podczas zgłaszania',
+    'no_personal_data' => 'Nikt nie będzie mógł Cię rozpoznać, gdy będziesz zgłaszać i nie będziesz musiał\musiała podawać żadnych danych osobowych, ponieważ zgłoszenia można dokonać tylko poprzez podłączenie portfela.',
+    'detailed' => 'Znajdź wszystkie szczegółowe',
+    'information' => 'informacje o wszystkich tokenach',
+    'tokenomics' => 'Tokenomia',
+    'tokenomics_description' => 'Powstała w celu dodania wartości do sektora shitcoinów, wyeliminowania oszustów i przywrócenia utraconego zaufania inwestorów. Aby to zrobić, będzie realizować różne zadania: Automatyczny system do wykrywania nieuczciwych umów. Zapobieganie i cytowanie nieuczciwych projektów. Edukacja i wiedza, aby być w stanie indywidualnie wykryć każde z tych oszustw.',
+    'roadmap' => 'Mapa drogowa',
+    'story_beyond' => '"Nasza historia dopiero zaczyna się rozkręcać"',
+    'price_update' => 'Cena będzie aktualizowana każdą minutę',
+    'ends_in' => 'Kupno kończy się za',
+    'tokens_offered' => 'Całkowita suma oferowanych tokenów',
+    'participants' => 'Uczestnicy',
+    'tokens_available' => 'Dostępne tokeny',
+    'ended' => 'Zakończona|Zakończone',
+    'marketing' => 'Our first sponsor tomorrow will be in the next few days to prepare your marketing',
+    'no_commision' => 'Dni bez prowizji',
+    'no_commision_offer' => 'Skorzystaj z 0% prowizji przy zakupie tokena SCAN.',
+    //06-01-2022
+];

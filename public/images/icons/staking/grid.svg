@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="grid" transform="translate(-20585 -7790)">
+    <g id="Grupo_2405" data-name="Grupo 2405" transform="translate(20305 7205)">
+      <path id="Vector" d="M8.928,6.848V2.08C8.928.6,8.256,0,6.586,0H2.342C.672,0,0,.6,0,2.08V6.837c0,1.491.672,2.08,2.342,2.08H6.586C8.256,8.927,8.928,8.329,8.928,6.848Z" transform="translate(295.609 594)" fill="#e8eaec"/>
+      <path id="Vector-2" data-name="Vector" d="M8.928,6.848V2.08C8.928.6,8.256,0,6.586,0H2.342C.672,0,0,.6,0,2.08V6.837c0,1.491.672,2.08,2.342,2.08H6.586C8.256,8.927,8.928,8.329,8.928,6.848Z" transform="translate(306.214 594)" fill="#e8eaec"/>
+      <path id="Vector-3" data-name="Vector" d="M8.928,6.585V2.342C8.928.672,8.256,0,6.586,0H2.342C.672,0,0,.672,0,2.342V6.585c0,1.67.672,2.342,2.342,2.342H6.586C8.256,8.927,8.928,8.255,8.928,6.585Z" transform="translate(295.609 606.079)" fill="#e8eaec"/>
+      <path id="Vector-4" data-name="Vector" d="M8.928,6.585V2.342C8.928.672,8.256,0,6.586,0H2.342C.672,0,0,.672,0,2.342V6.585c0,1.67.672,2.342,2.342,2.342H6.586C8.256,8.927,8.928,8.255,8.928,6.585Z" transform="translate(306.214 606.079)" fill="#e8eaec"/>
+      <path id="Vector-5" data-name="Vector" d="M8.928,6.848V2.08C8.928.6,8.256,0,6.586,0H2.342C.672,0,0,.6,0,2.08V6.837c0,1.491.672,2.08,2.342,2.08H6.586C8.256,8.927,8.928,8.329,8.928,6.848Z" transform="translate(285 594)" fill="#e8eaec"/>
+      <path id="Vector-6" data-name="Vector" d="M8.928,6.585V2.342C8.928.672,8.256,0,6.586,0H2.342C.672,0,0,.672,0,2.342V6.585c0,1.67.672,2.342,2.342,2.342H6.586C8.256,8.927,8.928,8.255,8.928,6.585Z" transform="translate(285 606.079)" fill="#e8eaec"/>
+    </g>
+    <rect id="Rectángulo_2527" data-name="Rectángulo 2527" width="40" height="40" transform="translate(20585 7790)" fill="#fff" opacity="0"/>
+  </g>
+</svg>

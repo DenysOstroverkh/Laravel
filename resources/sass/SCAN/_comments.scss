@@ -1,0 +1,123 @@
+.scan-comment-component{
+  max-width: 500px;
+  margin-bottom: 15px;
+  border-top: solid 1px #252525;
+  padding-top: 20px;
+
+  &:not(.is-nested):first-child{
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .scan-comment-user{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #CFD3D9;
+  }
+
+  .scan-comment-date{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: rgb(95,102,123);
+  }
+
+  .scan-comment-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .scan-comment-head-avatar{
+    display: flex;
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 999px;
+    overflow: hidden;
+
+    .scan-comment-avatar{
+      width: 100%;
+    }
+  }
+
+  .scan-comment-content-container{
+    padding-left: 4px;
+  }
+  
+  .scan-comment-content{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #CFD3D9;
+  }
+
+  .scan-comment-foot-content{
+    display: flex;
+    margin-top: 7px;
+    
+    .answer, .like{
+      font-size: 0.7rem;
+      margin-right: 10px;
+      color: $text-secondary-color;
+      cursor: pointer;
+
+      i{
+        color: $text-secondary-color;
+      }
+
+      &.is-loading{
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+
+    .answer:hover{
+      color: $primary-color;
+      i{
+        color: $primary-color
+      }
+    }
+    
+    .like:hover{
+      color:$danger-color;
+      i{
+        color: $danger-color
+      }
+    }
+  }
+
+  .scan-comment-comments{
+    margin-top: 15px;
+    padding-left: 20px;
+  }
+}
+
+.scan-comment-form{
+  width: 100%;
+  padding: 25px 15px 35px;
+
+  .textarea-container{
+    position: relative;
+
+    textarea{
+      padding-right: 40px;
+    }
+
+    .submit-comment-button{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover{
+        i{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

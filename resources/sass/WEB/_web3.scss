@@ -1,0 +1,57 @@
+.web3modal-modal-lightbox{
+  backdrop-filter: blur(2px) !important;
+  z-index: 999999999 !important;
+}
+
+.web3modal-modal-container{
+  align-items: flex-start !important;
+  padding-top: 100px !important;
+}
+
+.web3modal-modal-card{
+  grid-template-columns: 1fr !important;
+  padding: 40px !important;
+  background: $background-secondary !important;
+  max-width: 500px !important;
+  width: fit-content !important;
+
+  .web3modal-provider-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+    background-color: $background-secondary;
+    box-shadow: 0px 0px 11px black inset;
+    transition: none !important;
+
+    .web3modal-provider-name{
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: white;
+    }
+
+    .web3modal-provider-description{
+      display: none;
+    }
+  }
+
+  .web3modal-provider-wrapper{
+    border: none;
+
+    .web3modal-provider-icon{
+      margin-right: 20px;
+
+      img{
+        filter: drop-shadow(2px 2px 0px black);
+      }
+    }
+
+    &:hover{
+      .web3modal-provider-container{
+        background-color: $primary-color;
+        box-shadow: 0px 0px 0px transparent inset;
+      }
+    }
+  }
+}

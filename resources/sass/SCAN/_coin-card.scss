@@ -1,0 +1,59 @@
+.coin-card{
+  display: flex;
+  // background: black;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  padding: 6px 12px 6px 10px;
+  border-radius: 10px;
+  // box-shadow: 0px 0px 12px rgba($primary-color, 0.3);
+  cursor: default;
+
+  .coin-card-image{
+    display: flex;
+    width: 50px;
+
+    img{
+      filter: drop-shadow(0px 0px 12px rgba($primary-color, 0.3));
+    }
+  }
+
+  .coin-card-info{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .coin-card-info-top{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $success-color;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .coin-card-info-center{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: gray;
+    white-space: nowrap;
+  }
+
+  .coin-card-info-bottom{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+  }
+
+  // &:hover{
+  //   box-shadow: 0px 0px 12px rgba($primary-color, 0.4);
+
+  //   .coin-card-image{
+  //     img{
+  //       filter: drop-shadow(0px 0px 12px rgba($primary-color, 0.4));
+  //     }
+  //   }
+  // }
+}

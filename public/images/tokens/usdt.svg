@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271.225" height="271.225" viewBox="0 0 271.225 271.225">
+  <defs>
+    <filter id="Fond" x="0" y="0" width="271.225" height="271.225" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.58"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Tether-usdt-logo" transform="translate(-167.425 -263)">
+    <g transform="matrix(1, 0, 0, 1, 167.42, 263)" filter="url(#Fond)">
+      <path id="Fond-2" data-name="Fond" d="M126.612,0A126.612,126.612,0,1,1,0,126.612,126.613,126.613,0,0,1,126.612,0Z" transform="translate(9 6)" fill="#26a17b"/>
+    </g>
+    <path id="Trazado_628" data-name="Trazado 628" d="M166.394,124.4h0c-.966.072-5.956.37-17.088.37-8.854,0-15.14-.266-17.345-.37h0c-34.215-1.505-59.754-7.461-59.754-14.592S97.746,96.725,131.961,95.2v23.269c2.238.161,8.644.539,17.5.539,10.624,0,15.945-.443,16.9-.531V95.211c34.143,1.521,59.625,7.477,59.625,14.592s-25.474,13.071-59.625,14.584h0Zm0-31.592V71.983h47.649V40.23H84.312V71.983h47.641V92.8c-38.723,1.779-67.843,9.449-67.843,18.641s29.121,16.854,67.843,18.641V196.8h34.433V130.055c38.634-1.779,67.706-9.441,67.706-18.625S205.044,94.584,166.386,92.8h0Zm0,0Z" transform="translate(153.936 277.096)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

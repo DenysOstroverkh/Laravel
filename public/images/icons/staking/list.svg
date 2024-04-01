@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="linear" transform="translate(-20659 -7800)">
+    <g id="Grupo_2406" data-name="Grupo 2406" transform="translate(20342 7215)">
+      <g id="Grupo_2399" data-name="Grupo 2399" transform="translate(323 601.485)">
+        <path id="Vector" d="M6.037,4.453V1.584C6.037.455,5.582,0,4.453,0H1.584C.455,0,0,.455,0,1.584V4.453C0,5.582.455,6.036,1.584,6.036H4.453C5.582,6.036,6.037,5.582,6.037,4.453Z" transform="translate(0 0)" fill="#e8eaec"/>
+        <path id="Vector-2" data-name="Vector" d="M0,2.088V17.8c0,1.492.454,2.088,1.584,2.088H4.452c1.129,0,1.584-.6,1.584-2.088V2.088C6.036.6,5.582,0,4.452,0H1.584C.454,0,0,.6,0,2.088Z" transform="translate(28.979 0) rotate(90)" fill="#e8eaec"/>
+      </g>
+      <g id="Grupo_2400" data-name="Grupo 2400" transform="translate(323 594)">
+        <path id="Vector-3" data-name="Vector" d="M6.037,4.453V1.584C6.037.455,5.582,0,4.453,0H1.584C.455,0,0,.455,0,1.584V4.453C0,5.582.455,6.036,1.584,6.036H4.453C5.582,6.036,6.037,5.582,6.037,4.453Z" transform="translate(0 0)" fill="#e8eaec"/>
+        <path id="Vector-4" data-name="Vector" d="M0,2.088V17.8c0,1.492.454,2.088,1.584,2.088H4.452c1.129,0,1.584-.6,1.584-2.088V2.088C6.036.6,5.582,0,4.452,0H1.584C.454,0,0,.6,0,2.088Z" transform="translate(28.979 0) rotate(90)" fill="#e8eaec"/>
+      </g>
+      <g id="Grupo_2401" data-name="Grupo 2401" transform="translate(323 608.97)">
+        <path id="Vector-5" data-name="Vector" d="M6.037,4.453V1.584C6.037.455,5.582,0,4.453,0H1.584C.455,0,0,.455,0,1.584V4.453C0,5.582.455,6.036,1.584,6.036H4.453C5.582,6.036,6.037,5.582,6.037,4.453Z" transform="translate(0 0)" fill="#e8eaec"/>
+        <path id="Vector-6" data-name="Vector" d="M0,2.088V17.8c0,1.492.454,2.088,1.584,2.088H4.452c1.129,0,1.584-.6,1.584-2.088V2.088C6.036.6,5.582,0,4.452,0H1.584C.454,0,0,.6,0,2.088Z" transform="translate(28.979 0) rotate(90)" fill="#e8eaec"/>
+      </g>
+    </g>
+    <g id="Rectángulo_2528" data-name="Rectángulo 2528" transform="translate(20659 7800)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="40" height="40" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="39" fill="none"/>
+    </g>
+  </g>
+</svg>

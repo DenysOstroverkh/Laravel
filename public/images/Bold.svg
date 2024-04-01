@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="vuesax_bold_judge" data-name="vuesax/bold/judge" transform="translate(-683 -561)">
+    <g id="judge" transform="translate(683 561)">
+      <path id="Vector" d="M0,0H74V74H0Z" fill="none" opacity="0"/>
+      <path id="Vector-2" data-name="Vector" d="M18.2,18.824c-.462.463-.414,0-1,0s-1.537.463-2,0l-15-16,1-1,2-2,15,15A3.318,3.318,0,0,1,18.2,18.824Z" transform="translate(44.801 40.176)" fill="#f99600"/>
+      <path id="Vector-3" data-name="Vector" d="M9.062,1.292l18,17a3.916,3.916,0,0,1,0,5l-3,3a6.4,6.4,0,0,1-9,0l-13-14a6.456,6.456,0,0,1,0-9l3-2A2.692,2.692,0,0,1,9.062,1.292Z" transform="translate(10.938 27.708)" fill="#f99600"/>
+      <path id="Vector-4" data-name="Vector" d="M34.615,23.7l-11,12a3.841,3.841,0,0,1-5,0l-18-18a2.625,2.625,0,0,1,0-4l12-12a6.456,6.456,0,0,1,9,0l13,14C37.051,18.167,37.051,21.2,34.615,23.7Z" transform="translate(22.385 7.3)" fill="#f99600"/>
+      <path id="Vector-5" data-name="Vector" d="M21.146,4.563h-19a1.827,1.827,0,0,1-2-2c0-1.264.736-3,2-3h19c1.264,0,2,1.736,2,3A1.827,1.827,0,0,1,21.146,4.563Z" transform="translate(3.854 62.438)" fill="#f99600"/>
+    </g>
+  </g>
+</svg>

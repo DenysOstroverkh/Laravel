@@ -1,0 +1,101 @@
+.lesson-notes-editor{
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: $gray-dark-color;
+  max-width: 400px;
+
+  .lesson-notes-head{
+    position: relative;
+    background: $primary-color;
+    padding: 10px 20px;
+
+    .lesson-notes-title{
+      font-weight: 400;
+    }
+
+    .lesson-notes-navbar{
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0 10px;
+      margin: 0 10px;
+      height: 100%;
+
+      .lesson-notes-navbar-trigger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+
+        span{
+          width: 4px;
+          height: 4px;
+          margin-right: 4px;
+          background-color: white;
+          border-radius: 999px;
+
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .lesson-notes-foot{
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0 10px;
+
+    &:hover{
+      i{
+        color: $primary-color;
+      }
+    }
+  }
+
+  .quill-editor{
+    display: flex;
+    flex-direction: column-reverse;
+
+    .ql-toolbar{
+      border: none;
+      padding: 10px ​20px;
+
+      button{
+        .ql-stroke{
+          stroke: $text-secondary-color;
+        }
+
+        .ql-fill{
+          fill: $text-secondary-color;
+        }
+
+        &:hover, &.ql-active{
+          .ql-stroke{
+            stroke: $primary-color;
+          }
+
+          .ql-fill{
+            fill: $primary-color;
+          }
+        }
+      }
+    }
+
+    .ql-container{
+      border: none;
+      min-height: 200px;
+      border-bottom: solid 1px $text-secondary-color;
+
+      strong{
+        color: white;
+      }
+    }
+  }
+}

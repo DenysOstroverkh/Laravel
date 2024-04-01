@@ -1,0 +1,36 @@
+.scan-tweet-component{
+  max-width: 95vw;
+  width: 550px;
+
+  .scan-tweet-title{
+    color: gainsboro;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+  }
+
+  .twitter-tweet{
+    margin-top: 0;
+  }
+
+  .scan-retweets{
+    text-align: center;
+    margin-top: 20px;
+
+    .scan-retweets-text{
+      color: $text-secondary-color;
+      font-weight: 400;
+    }
+
+    .scan-retweets-count{
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -2px;
+    }
+
+    .scan-retweets-target{
+      color: $primary-color;
+    }
+  }
+}

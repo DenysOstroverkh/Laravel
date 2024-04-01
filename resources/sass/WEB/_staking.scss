@@ -1,0 +1,480 @@
+.web-staking-index-component{
+  
+}
+
+.web-staking-index-banner{
+  padding-top: 60px;
+
+  @media(min-width: $media-tablet-min){
+    padding-top: 105px;
+  }
+
+  @media(min-width: $media-widescreen-min){
+    padding-top: 60px;
+  }
+
+  position: relative;
+  background-color: #12003B;
+  background-image: url("/images/staking/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  // background: transparent linear-gradient(78deg, #10215C 0%, #11205A 2%, #1E1639 28%, #131235 56%, #264B3F 100%) 0% 0% no-repeat padding-box;
+  // @include animatedBackground;
+
+  .banner-container{
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 40px 20px;
+  }
+
+  .banner-title{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  .banner-text{
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  @media(min-width: $media-tablet-min){
+    .banner-container{
+      padding: 110px 40px;
+    }
+
+    .banner-title{
+      font-size: 2.5rem;
+      font-weight: 600;
+      width: 50%;
+      line-height: 1.6;
+    }
+
+    .banner-text{
+      font-size: 1.3rem;
+      width: 50%;
+      line-height: 1.6;
+    }
+  }
+}
+
+.scan-staking-list-component{
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 20px;
+  
+  .scan-staking-list-container{
+    // display: flex;
+    // justify-content: center;
+    margin-top: 20px;
+
+    &.is-card{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill, 335px);
+      column-gap: 50px;
+      row-gap: 50px;
+    }
+  }
+}
+
+.scan-staking-navbar{
+  display: flex;
+  align-items: center;
+
+  .ssn-item{
+    margin-right: 8px;
+    cursor: pointer;
+
+    .scan-icon{
+      &:hover{
+        opacity: 0.75;
+      }
+    }
+
+    &:not(.is-active) .scan-icon{
+      background-color: $color_background_7;
+    }
+
+    .control-label{
+      font-size: 0.85rem;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+.scan-staking-card-component{
+  // padding: 0 30px;
+
+  &.is-card{
+    .scan-staking-card-container{
+      background-color: $color_background_9;
+      border-radius: 25px;
+      overflow: hidden;
+      padding: 40px 20px 25px;
+      // width: 320px;
+    }
+
+    .stc-head{
+      text-align: center;
+
+      .stc-title{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 7px;
+      }
+
+      .stc-explain{
+        font-size: 0.8rem;
+        font-weight: 300;
+      }
+    }
+
+    .stc-content{
+      .stc-icon-container{
+        display: flex;
+        justify-content: center;
+        margin: 22px 0 0;
+
+        .stc-icon{
+          width: 90px;
+        }
+      }
+
+      .stc-apr{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+
+        .stc-apr-badge{
+          color: $success-color;
+          background: linear-gradient(0deg, rgba(#1BCC93, 0.18), rgba(#0E664A, 0.18));
+          text-align: center;
+          font-size: .8rem;
+          display: inline-block;
+          padding: 7px 12px 5px;
+          border-radius: 999px;
+        }
+      }
+
+      .stc-stats{
+        margin-top: 20px;
+
+        .stcs-stat{
+          display: flex;
+          justify-content: space-between;
+          font-size: .85rem;
+          padding: 0 20px;
+          margin-top: 7px;
+
+          .stcs-stat-data{
+            font-weight: 300;
+          }
+        }
+      }
+
+      .stc-rewards{
+        margin-top: 20px;
+
+        .stc-rewards-container{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+        }
+
+        .stc-reward-data{
+          display: flex;
+          flex-direction: column;
+
+          .stcr-text{
+            font-size: 0.75rem;
+            font-weight: 300;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+
+    .stc-foot{
+      margin-top: 40px;
+
+      .stc-foot-container{
+        .button{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  
+  &.is-list{
+    .scan-staking-card-container{
+      background-color: $color_background_9;
+      border-radius: 25px;
+      overflow: hidden;
+      padding: 20px;
+      margin-bottom: 15px;
+
+      .stc-head{
+        display: grid;
+
+        .stc-head-section{
+          flex: 1;
+          margin: 20px 0 0;
+          font-size: 1rem;
+        }
+
+        .stc-head-section-title{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .stc-icon{
+            width: 40px;
+            margin-right: 6px;
+          }
+
+          .stc-title{
+            font-weight: 500;
+          }
+        }
+
+        .stc-head-section-info{
+          .stci-title{
+            font-size: 0.8rem;
+            font-weight: 300;
+            margin-bottom: 3px;
+
+            small{
+              font-weight: 100;
+              font-size: 0.55rem;
+            }
+          }
+
+          .stci-text{
+            font-weight: 400;
+
+            &.is-apy{
+              color: $success-color;
+            }
+
+            &.is-locktime{
+              color: $primary-color;
+            }
+          }
+        }
+
+        .stc-head-section-action{
+          justify-self: center;
+          margin-bottom: 30px;
+          
+          .stca-trigger{
+            position: relative;
+            color: $primary-color;
+            padding-right: 25px;
+            cursor: pointer;
+
+            &:after{
+              content: "";
+              position: absolute;
+              right: 0;
+              width: 8px;
+              height: 8px;
+              border-left: solid 2px $primary-color;
+              border-bottom: solid 2px $primary-color;
+              transform: rotateX(180deg) rotateZ(135deg) translate(-2px, 1px);
+              right: 10px;
+              top: 2px;
+            }
+          }
+        }
+      }
+
+      .stc-content{
+        display: none;
+      }
+
+      .stc-foot{
+        margin: 40px 0 0;
+
+        .stc-foot-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .stcf-info{
+            margin-bottom: 40px;
+
+            .stcfi-text{
+              // font-size: .85rem;
+              font-size: .75rem;
+              font-weight: 300;
+            }
+          }
+
+          .stcf-actions{
+            .stcfa-amount{
+              position: relative;
+              display: flex;
+              flex: 0 0 300px;
+              margin-bottom: 10px;
+            }
+
+            .stake-button{
+              width: 100%;
+            }
+
+            .max-input{
+              border-radius: 6px;
+              background-color: $color_background_1;
+              border-color: $color_background_6;
+              font-weight: 300;
+            }
+
+            .max-button{
+              margin-left: 5px;
+              border-radius: 6px;
+            }
+
+            .balance{
+              position: absolute;
+              top: -13px;
+              font-size: 0.6rem;
+            }
+          }
+
+          .button{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    &.is-opened{
+      .scan-staking-card-container{
+        .stc-head{
+          .stc-head-section-action{
+            .stca-trigger{
+              &:after{
+                transform: rotateX(0deg) rotateZ(135deg) translate(-2px, 1px);
+                top: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    &.is-list{
+      .scan-staking-card-container{
+        padding: 20px 40px;
+
+        .stc-head{
+          grid-template-columns: 1fr 1.25fr 1.25fr 0.75fr 1.5fr 0.5fr 1fr;
+          align-items: center;
+
+          .stc-head-section{
+            margin: 0;
+            font-size: 1rem;
+          }
+
+          .stc-head-section-title{
+            justify-content: flex-start;
+          }
+
+          .stc-head-section-action{
+            justify-self: flex-end;
+            margin-bottom: 0;
+          }
+        }
+
+        .stc-foot{
+          .stc-foot-container{
+            flex-direction: row;
+
+            .stcf-info{
+              max-width: 330px;
+              margin-bottom: 0;
+            }
+
+            .stcf-actions{
+              flex: 1;
+              display: flex;
+              justify-content: flex-end;
+
+              .stcfa-amount{
+                margin-bottom: 0;
+                margin-right: 40px;
+              }
+
+              .stake-button{
+                width: 250px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.scan-staking-vault-component{
+  .scan-staking-vault-container{
+    display: grid;
+    align-items: center;
+    background-color: $color_background_1;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+
+    .ssv-info{
+      margin: 10px 0;
+
+      .ssvi-title{
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-bottom: 3px;
+      }
+
+      .ssvi-text{
+        font-weight: 400;
+
+        &.is-apy{
+          color: $success-color;
+        }
+      }
+
+      &.ssv-buttons{
+        display: flex;
+        flex-direction: column;
+
+        .button{
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    .scan-staking-vault-container{
+      grid-template-columns: 1fr 0.8fr 0.6fr 0.8fr 2fr;
+
+      .ssv-info{
+        margin: 0;
+
+        &.ssv-buttons{
+          display: block;
+          justify-self: flex-end;
+
+          .button{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

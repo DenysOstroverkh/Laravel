@@ -1,0 +1,79 @@
+.scan-countdown-label{
+  color: gainsboro;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.scan-countdown{
+  display: flex;
+  justify-content: center;
+
+  .scan-countdown-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scan-countdown-time{
+    font-size: 1.5rem;
+    width: 50px;
+    height: 56px;
+    border: solid 3px transparent;
+    margin: 10px 4px 5px;
+    border-radius: 13px;
+    color: white;
+    font-family: $font-secondary;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scan-countdown-text {
+    color: white;
+    font-family: $font-secondary;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .scan-countdown-time-up{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: $background-darkblue;
+    z-index: -1;
+  }
+
+  .scan-countdown-time-down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: $background-darkenblue;
+    z-index: -1;
+  }
+
+  @media(min-width: $media-tablet-min){
+    .scan-countdown-time{
+      font-size: 3.5rem;
+      border: solid 6px transparent;
+      border-radius: 20px;
+      width: 110px;
+      height: 120px;
+      margin: 5px;
+    }
+
+    .scan-countdown-text{
+      font-size: 1rem;
+    }
+  }
+}

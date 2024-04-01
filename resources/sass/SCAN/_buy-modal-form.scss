@@ -1,0 +1,28 @@
+.scan-buy-modal-form-component{
+  .button{
+    font-weight: 400;
+    display: flex;
+    height: auto;
+    font-size: 1rem;
+
+    .button-img{
+      width: 55px;
+      padding: 8px 8px 0px;
+
+      &.is-0-commission{
+        width: 39px;
+        height: 39px;
+        display: flex;
+        margin: 7px 20px;
+        font-size: 1.4rem;
+        background: $primary-color;
+        border-radius: 999px;
+      }
+    }
+
+    .button-text{
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

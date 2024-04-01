@@ -1,0 +1,39 @@
+.scan-language-component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .scan-language-image{
+    display: flex;
+    width: 20px;
+    border-radius: 999px;
+    margin-right: 5px;
+    pointer-events: none;
+  }
+
+  .scan-language-name{
+    pointer-events: none;
+  }
+}
+
+.web-languages-modal-component{
+  .language-wrapper{
+    margin-bottom: 10px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .scan-language-component{
+    padding: 10px 25px 8px;
+    border-radius: 10px;
+    min-width: 200px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover, &.is-selected{
+      background-color: black;
+    }
+  }
+}

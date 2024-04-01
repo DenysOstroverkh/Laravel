@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="296" height="296" viewBox="0 0 296 296">
+  <defs>
+    <filter id="Vector" x="31.123" y="57.434" width="234.506" height="186.449" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.188"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_0_Commissions-icono" data-name="0% Commissions-icono" transform="translate(-0.016 -0.452)">
+    <circle id="Elipse_110" data-name="Elipse 110" cx="148" cy="148" r="148" transform="translate(0.016 0.452)" fill="#2a63ff"/>
+    <g id="ticket-star" transform="translate(14.12 13.897)">
+      <g transform="matrix(1, 0, 0, 1, -14.1, -13.45)" filter="url(#Vector)">
+        <path id="Vector-2" data-name="Vector" d="M158.564,0h-73V31.248a7.589,7.589,0,0,1-15.162,0V0H57.843C15.063,0,.984,12.209.009,50.39a6.859,6.859,0,0,0,2.166,5.174A7.278,7.278,0,0,0,7.59,57.736c15.162,0,27.617,12,27.617,26.488S22.753,110.713,7.59,110.713a7.451,7.451,0,0,0-5.415,2.173,6.858,6.858,0,0,0-2.166,5.173c.975,38.18,15.054,50.39,57.834,50.39H70.406V137.2a7.589,7.589,0,0,1,15.162,0v31.248h73c44.4,0,57.942-12.934,57.942-55.356V55.357C216.506,12.934,202.968,0,158.564,0Zm19.711,83.19L168.2,92.5a1.426,1.426,0,0,0-.433,1.449l2.383,13.141a6.22,6.22,0,0,1-2.708,6.312,6.885,6.885,0,0,1-7.04.517l-12.455-6.208a1.929,1.929,0,0,0-1.516,0l-12.455,6.208a6.923,6.923,0,0,1-7.04-.517,6.335,6.335,0,0,1-2.708-6.312l2.383-13.141a1.8,1.8,0,0,0-.433-1.449L116.11,83.19a6.177,6.177,0,0,1-1.733-6.519,6.327,6.327,0,0,1,5.415-4.346l13.863-1.966a2.164,2.164,0,0,0,1.3-.828l6.173-12a6.821,6.821,0,0,1,6.065-3.518,6.531,6.531,0,0,1,5.957,3.518l6.173,12a1.264,1.264,0,0,0,1.191.828l13.863,1.966a6.485,6.485,0,0,1,5.415,4.346A5.756,5.756,0,0,1,178.275,83.19Z" transform="translate(40.12 63.43)" fill="#fff"/>
+      </g>
+      <path id="Vector-3" data-name="Vector" d="M0,0H268.426V268.426H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

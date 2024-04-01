@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Clock" transform="translate(2.467)">
+    <rect id="Rectángulo_2314" data-name="Rectángulo 2314" width="24" height="24" transform="translate(-2.467)" fill="none"/>
+    <path id="Trazado_794" data-name="Trazado 794" d="M10.721,0A10.721,10.721,0,1,0,21.441,10.721,10.721,10.721,0,0,0,10.721,0Zm0,20.029a9.313,9.313,0,1,1,9.307-9.31A9.313,9.313,0,0,1,10.721,20.029Z" transform="translate(-1.275 1.279)" fill="#fff"/>
+    <path id="Trazado_795" data-name="Trazado 795" d="M74.52,40.315l-.1.14a.691.691,0,0,1-.967.156l-3.555-2.606-.156-.114a.692.692,0,0,1-.209-.5V30.252a.692.692,0,0,1,.7-.692H70.4a.692.692,0,0,1,.688.692v6.694l3.275,2.4a.691.691,0,0,1,.158.967Z" transform="translate(-61.182 -24.465)" fill="#fff"/>
+  </g>
+</svg>

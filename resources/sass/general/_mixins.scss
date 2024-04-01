@@ -1,0 +1,59 @@
+%content-menu-padding{
+  padding-top: 90px;
+
+  @media(min-width: $media-tablet-min){
+    padding-top: 135px;
+  }
+
+  @media(min-width: $media-widescreen-min){
+    padding-top: 90px;
+  }
+}
+
+@mixin scrollbarMini($background: black, $color: #17193b) {
+  /* Customize website's scrollbar like Mac OS Not supports in Firefox and IE */
+  /* total width */
+  &::-webkit-scrollbar{
+    background-color: $background;
+    width: 7px;
+  }
+
+  /* background of the scrollbar except button or resizer */
+  &::-webkit-scrollbar-track{
+    background-color: $background;
+  }
+
+  /* scrollbar itself */
+  &::-webkit-scrollbar-thumb{
+    background-color: $color;
+    border-radius: 10px;
+    border: 2px solid $background;
+  }
+
+  /* set button(top and bottom of the scrollbar) */
+  &::-webkit-scrollbar-button{
+    display:none;
+  }
+}
+
+@mixin animatedBackground($left: $color_background_9, $right: $primary-color) {
+  // background: linear-gradient(45deg, $left 25% mix($left, $right, 50%) 50%, $right 100%);
+  // background-size: 200% 200%;  
+  // height: 100%;
+  // width: 100%;
+  // animation: background 15s ease infinite;
+  
+  @keyframes background { 
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50% {
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}

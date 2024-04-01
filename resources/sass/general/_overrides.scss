@@ -1,0 +1,413 @@
+.notices{
+  z-index: 99999;
+}
+
+.modal-close{
+  z-index: 99999;
+}
+
+.modal .animation-content{
+  margin: 10vh auto;
+}
+
+.modal-card-head, .modal-card-foot, .modal-card-body{
+  background-color: $color_background_9;
+  border: none !important;
+  
+  .modal-card-title{
+    color: white;
+  }
+}
+
+.modal-card-head{
+  padding-top: 40px !important;
+}
+
+.modal-card-foot{
+  padding-bottom: 40px !important;
+  justify-content: space-between !important;
+
+  .button:only-child{
+    margin-left: auto;
+  }
+}
+
+.owl-theme{
+  .owl-dots .owl-dot span{
+    background-color: white !important;
+  }
+
+  .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span{
+    background-color: $primary-color !important;
+  }
+
+  .owl-nav{
+    width: 700px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin: auto !important;
+    max-width: 90vw !important;
+
+    [class*='owl-']{
+      border: solid 3px white !important;
+      background: transparent !important;
+      padding: 12px 30px 11px !important;
+      border-radius: 10px !important;
+    }
+  }
+}
+
+.button{
+  border-radius: 10px;
+  padding: 6px 20px 7px;
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  &.is-inset{
+    box-shadow: $inset-shadow;
+  }
+
+  &.is-primary{
+    &.is-gradient{
+      border: none !important;
+      background: linear-gradient(45deg, $primary-color 34%, #270c50 100%);
+    }
+  }
+
+  &.is-small{
+    font-size: 0.7rem;
+    border-radius: 8px;
+    
+    &:not(.is-rounded){
+      border-radius: 8px;
+    }
+  }
+
+  &.is-dark{
+    background-color: $dark-color;
+    // box-shadow: 0px 0px 11px black inset;
+
+    &:hover{
+      background-color: darken($dark-color, 2.5);
+    }
+  }
+
+  &.is-gray{
+    border-color: $color_background_7;
+    background-color: $color_background_7;
+    color: white;
+
+    &:hover{
+      background-color: darken($color_background_7, 2.5);
+    }
+  }
+
+  &:hover{
+    &.is-hover-primary{
+      background-color: $primary-color;
+      border-color: $primary-color;
+      box-shadow: none;
+      color: white;
+    }
+
+    &.is-hover-secondary{
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      box-shadow: none;
+      color: white;
+    }
+
+    &.is-hover-success{
+      background-color: $success-color;
+      border-color: $success-color;
+      box-shadow: none;
+      color: white;
+    }
+
+    &.is-hover-danger{
+      background-color: $danger-color;
+      border-color: $danger-color;
+      box-shadow: none;
+      color: white;
+    }
+
+    &.is-hover-warning{
+      background-color: $warning-color;
+      border-color: $warning-color;
+      box-shadow: none;
+      color: white;
+    }
+
+    &.is-hover-info{
+      background-color: $info-color;
+      border-color: $info-color;
+      box-shadow: none;
+      color: white;
+    }
+  }
+}
+
+.input{
+  background: transparent;
+  border: solid 1px white;
+  border-radius: 10px;
+  color: white;
+
+  &.is-small{
+    border-radius: 6px;
+  }
+}
+
+.b-checkbox.checkbox input[type=checkbox] + .check{
+  border: 1px solid #d8d8d8;
+  transition: none;
+}
+
+.b-checkbox.checkbox input[type=checkbox]:checked + .check{
+  border-width: 2px;
+  border-color: $primary-color;
+  background-color: $primary-color;
+}
+
+.b-checkbox.checkbox:hover input[type=checkbox]:not(:disabled) + .check{
+    border-color: $primary-color;
+}
+
+.b-checkbox.checkbox input[type=checkbox]:focus + .check{
+    box-shadow: 0 0 0.5em rgba($primary-color, 0.8);
+}
+
+.b-table{
+  max-width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+  border-radius: 10px;
+
+  .table{
+    background-color: transparent;
+
+    th, th span, td, td span{
+      color: white;
+    }
+
+    th, th span{
+      font-weight: 800;
+    }
+
+    &.is-striped tbody tr:not(.is-selected):nth-child(even){
+      background-color: rgba(white, 0.15)
+    }
+  }
+}
+
+.b-table .table-wrapper.has-mobile-cards tr:not([class*=is-]){
+  background: $background-secondary;
+  border-radius: 10px;
+  overflow: hidden;
+
+  td:last-child{
+    border: none;
+  }
+}
+
+.carousel{
+  min-height: 0;
+}
+
+.carousel .carousel-indicator .indicator-item.is-active .indicator-style, .carousel .carousel-indicator .indicator-item .indicator-style:hover{
+  background: $primary-color;
+}
+
+.carousel .carousel-indicator .indicator-item .indicator-style{
+  border-color: $primary-color;
+}
+
+.carousel .carousel-indicator.is-inside.is-bottom{
+  bottom: 5px;
+}
+
+.b-table *{
+  white-space: nowrap;
+}
+
+.b-table .table th{
+  background-color: $background-secondary;
+  padding: 12px 10px 11px;
+}
+
+.b-table .table th, .b-table .table th span{
+  background-color: $background-secondary;
+  font-weight: 600;
+}
+
+.b-table .table th, .b-table .table th span, .b-table .table td, .b-table .table td span{
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.pagination-previous, .pagination-next, .pagination-link, .pagination-ellipsis{
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+
+  &:active, &:focus{
+    border-color: white;
+  }
+
+  &:not([disabled]){
+    &:hover{
+      color: $primary-color;
+      border-color: $primary-color;
+
+      i{color:$primary-color}
+    }
+  }
+
+  &[disabled]{
+    background: transparent;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.pagination-previous, .pagination-next{
+  padding: 0;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.b-slider{
+  &.is-transparent .b-slider-fill{
+    background-color: transparent !important;
+  }
+}
+
+.switch .check{
+  box-shadow: none !important;
+  transition: none !important;
+}
+
+.switch input[type=checkbox] + .check{
+  background-color: $color_background_7;
+}
+
+.switch:hover input[type=checkbox] + .check{
+  background-color: $color_background_7;
+}
+
+.switch input[type=checkbox]:checked + .check, .switch input[type=checkbox]:checked + .check.is-primary{
+  background: $primary-color;
+}
+
+.switch:hover input[type=checkbox]:checked + .check, .switch:hover input[type=checkbox]:checked + .check.is-primary{
+  background: rgba(rgba($primary-color, 0.8), 0.9);
+}
+
+
+// BUEFY MODAL
+.modal{
+  justify-content: flex-start !important;
+  padding: 15px;
+  // padding-top: 100px !important;
+
+  // SCROLLABLE UPDATE
+  padding: 40px 15px 100px;
+  display: block !important;
+  overflow: auto !important;
+}
+.modal-background{
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px) !important;
+
+  // SCROLLABLE UPDATE
+  position: fixed;
+}
+
+.animation-content.modal-content{
+  width: fit-content;
+
+  // SCROLLABLE UPDATE
+  width: 100%;
+  margin: auto;
+  max-height: none;
+
+  @media(min-width: 960px){
+    width: fit-content;
+  }
+}
+
+.loading-overlay .loading-background{
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.loading-overlay .loading-icon:after{
+  border-color: $primary-color;
+}
+
+// Buefy Navbar
+.navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link{
+  color: white !important;
+  background: black;
+}
+
+.navbar-item.is-active .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown{
+  background: black;
+}
+
+.vueAudioBetter{
+  width: 100% !important;
+  max-width: 400px !important;
+  margin: 0 !important;
+  // box-shadow: 0px 0px 11px inset black !important;
+  box-shadow: none !important;
+  background: $background-secondary !important;
+  // background-image: linear-gradient(90deg,$background-dark,$background-dark) !important;
+
+  .operate{
+    span:last-child{
+      font-size: 0.75rem !important;
+      color: white !important;
+      padding-left: 6px !important;
+      display: inline-flex !important;
+      font-family: monospace !important;
+      font-weight: 600 !important;
+    }
+  }
+
+  .iconfont{
+    color: white !important;
+
+    &:before{
+      color: white !important;
+    }
+  }
+
+  .slider{
+    width: calc(100% - 200px) !important;
+    
+    .process{
+      background: $primary-color !important;
+    }
+
+    .thunk{
+      .block{
+        opacity: 1 !important;
+        width: 11px !important;
+        height: 10px !important;
+        background: $primary-color !important;
+        border-color: $primary-color !important;
+      }
+    }
+  }
+
+  *{
+    user-select: none !important;
+  }
+}
+
+// EDITOR
+.ql-editor.ql-blank::before{
+  color: $text-secondary-color !important;
+}

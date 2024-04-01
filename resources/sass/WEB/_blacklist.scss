@@ -1,0 +1,323 @@
+.blacklist-header{
+  padding-top: 90px;
+
+  @media(min-width: $media-tablet-min){
+    padding-top: 135px;
+  }
+
+  @media(min-width: $media-widescreen-min){
+    padding-top: 105px;
+  }
+}
+
+.blacklist-header-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .blacklist-cards-container{
+    margin-bottom: 15px;
+    // padding: 20px;
+    padding: 10px 0 10px 5px;
+    border-radius: 10px;
+    background-color: $background-secondary;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    // .coin-card{
+    //   display: flex;
+    //   justify-content: center;
+
+    //   .coin-card-image{
+    //     width: 40px;
+    //     padding: 0;
+    //   }
+    // }
+
+    .media-card{
+      width: 100%;
+      padding-right: 30px;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .media-card-info-top{
+        color: $text-secondary-color;
+        margin-right: 15px;
+        color: $text-secondary-color;
+        font-weight: 600;
+        font-size: 0.85rem;
+      }
+
+      .media-card-info{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &:last-child{
+        display: none;
+      }
+    }
+  }
+
+  .blacklist-search-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: $background-secondary;
+    box-shadow: 0 5px 5px #000;
+
+    .search-box-input-container{
+      padding-bottom: 25px;
+    }
+
+    .search-box-component{
+      width: 100%;
+
+      .search-box-found-container{
+        width: calc(100% + 80px);
+        left: -40px;
+        padding: 10px 40px;
+        border-radius: 10px;
+        top: calc(100% - 25px);
+        box-shadow: 0 5px 5px #000;
+      }
+    }
+  }
+
+  @media(min-width: 430px){
+    .blacklist-cards-container{
+      flex-direction: row;
+    }
+  }
+
+  @media(min-width: 500px){
+    .blacklist-cards-container{
+      .media-card{
+        .media-card-info-top{
+          margin-right: 35px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .blacklist-search-container{
+      .search-box-input-container{
+        input{
+          min-width: 300px;
+        }
+      }
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    .blacklist-cards-container{
+      justify-content: flex-start;
+
+      .blacklist-media-cards{
+        display: flex;
+        flex-direction: row;
+
+        .media-card{
+          padding: 0;
+          
+          .media-card-info{
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: $media-tablet-min){
+    .blacklist-cards-container{
+      .coin-card{
+        margin-right: 10px;
+      }
+
+      .blacklist-media-cards{
+        .media-card{
+          .media-card-info-top{
+            margin-right: 20px;
+          }
+
+          &:last-child{
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: $media-desktop-min){
+    flex-wrap: nowrap;
+
+    .blacklist-cards-container{
+      flex: 1;
+      margin-bottom: 0;
+      margin-right: 35px;
+
+      .media-card{
+        .media-card-info-top, .media-card-info-center{
+          margin-top: 7px;
+        }
+
+        .media-card-info{
+          // flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media(min-width: $media-widescreen-min){
+    .blacklist-cards-container{
+      .coin-card{
+        width: initial;
+      }
+
+      .media-card{
+        display: block;
+      }
+    }
+
+    .blacklist-search-container{
+      flex: initial;
+
+      .search-box-component{
+        width: initial;
+      }
+    }
+  }
+}
+
+.blacklist-info{
+  display: flex;
+  flex-direction: column;
+
+  .blacklist-info-text{
+    max-width: 700px;
+  }
+
+  .blacklist-info-carousel{
+    .carousel-item{
+      border-radius: 15px;
+      overflow: hidden;
+      margin-top: 25px;
+    }
+  }
+
+  @media(min-width: $media-widescreen-min){
+    flex-direction: row;
+    justify-content: space-between;
+
+    .blacklist-info-carousel{
+      max-width: 800px;
+      margin-top: 0;
+    }
+  }
+}
+
+
+.blacklist-table-component{
+  .b-table thead{
+    th:first-child{
+      border-top-left-radius: 10px;
+      overflow: hidden;
+    }
+    th:last-child{
+      border-top-right-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
+  [data-label="Address"] {
+    .cell-address-copy{
+      display: flex;
+      justify-content: space-between;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+  }
+
+  .blacklist-token {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  .blacklist-token-logo{
+    width: 30px;
+    height: 30px;;
+
+    img{
+      display: block;
+      width: 100%;
+      border-radius: 999px;
+      box-shadow: 0px 0px 3px white;
+    }
+  }
+
+  .blacklist-token-data{
+    font-weight: 600;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  
+    .blacklist-token-symbol{
+      color: $text-secondary-color;
+      font-weight: 700;
+    }
+  }
+
+  .level-left{
+    display: none;
+  }
+
+  .level-right{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pagination-previous{
+    order: 1;
+  }
+}
+
+
+
+.b-slider.scam-slider{
+        position: relative;
+  pointer-events: none;
+  min-width: 200px;
+
+  .b-slider-thumb{
+          // background-color: white;
+          background-color: transparent;
+    border: none;
+  }
+
+        &:before{
+          content: 'Coming soon';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+  .b-slider-track{
+          filter: blur(7px);
+    background-color: $success-color;
+    background: linear-gradient(90deg, $success-color 0%, $warning-color 60%, $danger-color 100%);
+  }
+
+  .b-slider-fill{
+    background-color: transparent;
+  }
+}

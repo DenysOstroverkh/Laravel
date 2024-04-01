@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'scammers_worst' => 'Betrüger\' schlimmsten',
+    'nightmare' => 'Alptraum',
+    'description' => 'Lernen Sie die Plattform kennen, die entwickelt wurde, um Verträge oder Vorverkäufe aufzuspüren und einzufordern, mit detaillierten Analysen und einem Tool, mit dem Sie Betrügereien aufdecken können.',
+    'ecosystem' => 'Ein komplettes Ökosystem',
+    'kill_scammers' => 'um Betrüger zu TÖTEN',
+    'control' => 'Eine Plattform, die zur Kontrolle von Betrugs-Token entwickelt wurde',
+    'fill_form' => 'Melden Sie jeden Token, jeden Coin oder jeden Vorverkauf, indem Sie unser Meldeformular ausfüllen',
+    'high_value' => 'Sie können auch etwas dagegen tun, indem Sie eine Kontroverse auslösen. Ihr Bericht wird von der ScanDeFi-Community sehr geschätzt.',
+    'keep_safe' => 'Wir halten Sie bei der Meldung sicher',
+    'no_personal_data' => 'Niemand wird Sie bei Ihrer Meldung erkennen können, und Sie müssen keine persönlichen Daten angeben, da Sie die Meldung nur über die Verbindung zu Ihrem Wallet machen können.',
+    'detailed' => 'Alle Details finden Sie hier',
+    'information' => 'Informationen über alle Token',
+    'tokenomics' => 'Tokenomics',
+    'tokenomics_description' => 'Wurde mit dem Ziel gegründet, den Shitcoin-Sektor aufzuwerten, Betrüger auszuschalten und das verlorene Vertrauen der Anleger zurückzugewinnen. Um dies zu erreichen, wird es verschiedene Aufgaben erfüllen: Ein automatisches System zur Erkennung betrügerischer Verträge. Vorbeugung und Nennung von betrügerischen Projekten. Bildung und Wissen, um jeden dieser Betrügereien individuell aufdecken zu können.',
+    'roadmap' => 'Roadmap',
+    'story_beyond' => '"Our story is just beggining to go beyond"',
+    'price_update' => 'Der Preis wird jede Minute aktualisiert',
+    'ends_in' => 'Kauf endet in',
+    'tokens_offered' => 'Angebotene Token',
+    'participants' => 'Teilnehmer',
+    'tokens_available' => 'Verfügbare Token',
+    'ended' => 'Beendet',
+    'marketing' => 'Unser erster Sponsor morgen, wird in den nächsten Tagen sein, um Ihr Marketing vorzubereiten',
+    'no_commision' => 'Tage ohne Kommissionen',
+    'no_commision_offer' => 'Profitieren Sie von 0% Kommissionen für den Kauf des SCAN-Tokens.',
+    //06-01-2022
+];

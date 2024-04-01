@@ -1,0 +1,38 @@
+.team-card{
+    margin-bottom: 20px;
+    padding: 25px 33px;
+    background-color: #131726;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 369px;
+    width: 284px;
+    border-radius: 12px;
+
+
+    .team-card-image{
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        width: 140px;
+        margin-bottom: 6px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .team-card-name{
+        color: white;
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .team-card-work{
+        color: #2A63FF;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

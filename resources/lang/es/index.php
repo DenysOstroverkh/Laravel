@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'scammers_worst' => 'La peor pesadilla de',
+    'nightmare' => 'los estafadores',
+    'description' => 'Conozca la plataforma desarrollada para detectar y exigir contratos o preventas con fines de lucro, con un análisis detallado y una herramienta que permite detectar estafas.',
+    'ecosystem' => 'Un ecosistema completo',
+    'kill_scammers' => 'Para acabar con los scammers',
+    'control' => 'Una plataforma desarrollada para controlar los token estafa',
+    'fill_form' => 'Denuncie cualquier ficha, moneda o preventa rellenando nuestro formulario de denuncia',
+    'high_value' => 'También puede contrarrestarlo creando una controversia. Su informe será muy valorado por la Comunidad ScanDeFi.',
+    'keep_safe' => 'Manteniendo su seguridad mientras se informa',
+    'no_personal_data' => 'Nadie podrá reconocerte cuando denuncies y no tendrás que rellenar ningún dato personal, ya que sólo podrás denunciar conectando tu cartera.',
+    'detailed' => 'Encuentre todos los detalles',
+    'information' => 'información de todas los tokens',
+    'tokenomics' => 'Tokenomics',
+    'tokenomics_description' => 'Nace con el objetivo de aportar valor al sector del shitcoin, eliminar a los estafadores y devolver la confianza perdida a los inversores. Para ello, llevará a cabo diferentes tareas: Un sistema automático de detección de contratos fraudulentos. Prevención y citación de proyectos fraudulentos. Formación y conocimiento para poder detectar individualmente cada una de estas estafas.',
+    'roadmap' => 'Roadmap',
+    'story_beyond' => '"Nuestra historia está empezando a ir más allá"',
+    'price_update' => 'El precio se actualizará cada minuto',
+    'ends_in' => 'La compra termina en',
+    'tokens_offered' => 'Total de tokens ofrecidos',
+    'participants' => 'Participantes',
+    'tokens_available' => 'Tokens disponibles',
+    'ended' => 'Terminado',
+    'marketing' => 'Nuestro primer patrocinador mañana será en los próximos días para preparar su comercialización',
+    'no_commision' => 'Días sin comisión',
+    'no_commision_offer' => 'Benefíciese de las comisiones del 0% en la compra de la ficha SCAN.',
+    //06-01-2022
+];

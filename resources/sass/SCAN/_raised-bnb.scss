@@ -1,0 +1,25 @@
+.raised-bnb{
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  top: 100px;
+  width: 200px;
+  transform: rotate(0deg) translate(120%, 0);
+  transition: all 300ms ease-in-out 500ms;
+
+  .raised-bnb-text{
+    position: absolute;
+    bottom: 7px;
+    left: 44%;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: $font-secondary;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+    color: white;
+  }
+
+  &.has-raised{
+    transform: rotate(-13deg) translate(0, 0);
+  }
+}

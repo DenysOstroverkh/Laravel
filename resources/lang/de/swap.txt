@@ -1,0 +1,15 @@
+<?php 
+
+return [
+  'max' => 'Max',
+  'balance' => 'Balance: :balance',
+  'buy_tax' => 'Kaufsteuer: :tax %',
+  'sell_tax' => 'Verkaufssteuer: :tax %',
+  'select_token' => 'Token auswählen',
+  'insufficient_balance' => 'Unzureichendes :symbol Saldo',
+  'swap' => 'Tausch',
+  'approve' => 'Genehmigen',
+  'slippage' => 'Schlupf',
+  'transaction_confirmed' => 'Transaktion bestätigt!',
+    //06-01-2022
+];

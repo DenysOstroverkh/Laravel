@@ -1,0 +1,136 @@
+.web-games-component{
+    padding-top: 90px;
+  
+    @media(min-width: $media-tablet-min){
+      padding-top: 135px;
+    }
+  
+    @media(min-width: $media-widescreen-min){
+      padding-top: 105px;
+    }
+}
+
+.web-games-component{
+  .gaming-carousel-container{
+    margin-bottom: 50px;
+  }
+  
+  .slick-slider{
+    margin: 0 -15px;
+
+    .slick-slide{
+      > div{
+        padding: 0 15px;
+      }
+    }
+
+    .gaming-minigame{
+      .gaming-minigame-link{
+        display: flex;
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        .goto-minigame{
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -25px);
+          min-width: 200px;
+          max-width: calc(100% - 25px);
+        }
+      }
+
+      .gaming-minigame-foot{
+        margin-top: 15px;
+
+        .gaming-minigame-foot-title{
+          font-weight: 500;
+          font-size: 1.1rem;
+          color: white;
+          letter-spacing: 0.2px;
+        }
+
+        .gaming-minigame-foot-text{
+          font-size: 1rem;
+          font-weight: 300;
+          color: #A5A5A5;
+          margin-top: 5px;
+          width: 100%;
+        }
+      }
+
+      &.is-coming-soon{
+        .gaming-minigame-image{
+          filter: blur(10px);
+        }
+      }
+    }
+  }
+
+  .gaming-end-ranking{
+    position: relative;
+    text-align: center;
+    margin-bottom: 100px;
+
+    // .end-ranking-title{
+    //   color: #CFD3D9;
+    //   font-weight: 500;
+    //   font-size: 20px;
+    // }
+  }
+
+  .gaming-section{
+    background-color: $background-secondary;
+    border-radius: 30px;
+    padding: 50px 20px 62px;
+    margin-bottom: 80px;
+
+    .gaming-section-head{
+      margin-bottom: 45px;
+      text-align: center;
+    }
+
+    .gaming-section-title{
+      color: #FAFAFA;
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+
+    .gaming-section-subtitle{
+      color: #A5A5A5;
+      font-size: 1.05rem;
+      font-weight: 400;
+      margin-top: 3px;
+    }
+
+    .button{
+      white-space: initial;
+      height: auto;
+    }
+  }
+
+  @media(min-width: $media-desktop-min){
+    .gaming-section{
+      padding: 50px 50px 62px;
+    }
+  }
+}
+
+.gaming-ranking-table{
+  .gaming-table-ranking-position{
+    display: inline-flex;
+    margin-right: 10px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(min-width: $media-desktop-min){
+    th, td, span{
+      // font-size: 1.5rem !important;
+      // font-weight: 500;
+    }
+  }
+}

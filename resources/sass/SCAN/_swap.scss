@@ -1,0 +1,175 @@
+.scan-swap-component{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+
+    .scan-swap-content{
+      background: $color_background_9;
+      padding: 50px 30px;
+      border-radius: 30px;
+      overflow: hidden;
+      width: 95vw;
+      max-width: 450px;
+
+      .scan-swap-section{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .sss-left, .sss-right{
+        position: relative;
+      }
+
+      .sssb-logo{
+        display: flex;
+        border-radius: 999px;
+        overflow: hidden;
+        position: relative;
+        right: 6px;
+        
+        img{
+          width: 23px;
+          min-width: 23px;
+        }
+      }
+
+      .sssa-input{
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: white;
+        width: fit-content;
+      }
+
+      .sss-amount {
+        display: grid;
+        vertical-align: top;
+        align-items: center;
+        position: relative;
+        margin-top: 1px;
+        
+        &::after,
+        .sssa-input{
+          width: auto;
+          min-width: 1em;
+          font: inherit;
+          resize: none;
+          background: none;
+          appearance: none;
+          border: none;
+          font-size: 1.5rem;
+          font-weight: 900;
+        }
+
+        .sssa-max {
+          grid-area: 1 / 2;
+          text-transform: uppercase;
+          font-size: 0.8em;
+          font-weight: 700;
+          margin: 0 10px 0 5px;
+          padding: 5px;
+          cursor: pointer;
+          color: $primary-color;
+        }
+        
+        &::after {
+          height: 0;
+          content: attr(data-value);
+          visibility: hidden;
+          white-space: pre-wrap;
+        }
+      }
+
+      .sss-balance{
+        font-size: 0.8rem;
+        color: gainsboro;
+
+        &.is-tax{
+          color: $color_background_7;
+          position: absolute;
+          right: 0;
+          bottom: -5px;
+        }
+      }
+
+      .scan-swap-switch{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+
+        .sssw-container{
+          width: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+}
+
+.scan-swap-modal-component {
+  width: 95vw;
+  max-width: 350px;
+
+  .scan-modal-body{
+    padding: 30px 0 50px;
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  .scan-swap-token {
+    display: grid;
+    grid-template-columns: 25px auto auto;
+    align-items: center;
+    grid-column-gap: 6px;
+    padding: 8px 20px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: rgba(white, 0.1);
+    }
+
+    .sssb-logo{
+      display: inherit;
+      border-radius: 999px;
+      overflow: hidden;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.scan-swap-token{
+  .searched-token-image-missing{
+    width: 25px;
+    height: 25px;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+.slippage-container{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+
+  .b-slider{
+    margin-left: 30px;
+
+    .b-slider-thumb{
+      background: $primary-color;
+      border-color: $primary-color;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .b-slider-track {
+      background: $color_background_9;
+    }
+
+    &.is-primary .b-slider-fill{
+      background: $primary-color !important;
+    }
+  }
+}

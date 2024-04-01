@@ -1,0 +1,28 @@
+<?php
+
+return [
+  'blacklist1_0_title' => 'Blacklist 1.0',
+  'blacklist1_0_text' => 'La Blacklist es el otro núcleo en el que se basa el proyecto SCAN. Esta área tiene un objetivo principal: Aprender de la experiencia de nuestra comunidad permitiéndoles denunciar las estafas que han sufrido o detectado para hacerlas públicas y evitar que más personas caigan en estafas.',
+  'battle_title' => 'Batalla',
+  'battle_text' => 'En esta sección se llevarán a cabo acciones globales y directas contra las fichas de estafa. El equipo de SCAN las compartirá con la comunidad para que podamos aprovechar la fuerza colectiva de la comunidad.',
+  'farming_title' => 'Farming',
+  'farming_text' => 'Gane diferentes tokens bloqueando su SCAN y ganando tokens dentro del SCANSWAP.',
+  'gaming_title' => 'Gaming',
+  'gaming_text' => 'Una zona en la que podrás ganar SCAN jugando a nuestros propios videojuegos y arcades, utilizando nuestros NFTs. En esta zona contarás con grandes ventajas para todos los creadores de contenidos y jugadores que decidan jugar a todos los juegos de SCAN.',
+  'nfts_title' => 'NFTs',
+  'nfts_text' => 'Obtener NTFs únicos que podrán ser utilizados en la sección de Juego para ganar más SCAN.',
+  'scanner1_0_title' => 'Scanner',
+  'scanner1_0_text' => 'El escáner es el proyecto más ambicioso que tiene el equipo de SCAN y que proporcionará una excelente herramienta para luchar contra los estafadores. Este proyecto es uno de los 2 núcleos que tendrá nuestra plataforma.',
+  'accademy_title' => 'Academy',
+  'accademy_text' => 'En esta área nuestra comunidad podrá aprender a detectar y prevenir las estafas por sí misma a través de vídeos y contenidos educativos que nuestros expertos en seguridad y ciberdelincuencia prepararán para ellos.',
+  'voting_zone_title' => 'Zona de votación',
+  'voting_zone_text' => 'En esta zona, la gente puede votar y decidir sobre algunas características que se producirán en el futuro, en relación con la plataforma o el propio token, como quemaduras de token, cambios en la apariencia de la plataforma, adición de nuevas funcionalidades y mucho más.',
+  'scan_swap_title' => 'Scan Swap',
+  'scan_swap_text' => 'El ScanSwap será desarrollado con tecnología avanzada para que la comunidad pueda operar los tokens de la red, pero con la condición de no ser un contrato de estafa.',
+  'rewards_title' => 'Recompensas',
+  'rewards_text' => '¡En esta sección podrás recibir recompensas y tokens haciendo diferentes cosas y misiones! ¡Gana ayudando a que el mundo de las criptomonedas sea más seguro!',
+  'marketplace_title' => 'Marketplace',
+  'marketplace_text' => 'Es el lugar donde podrás intercambiar tus NFT y mejorar tus propiedades. Además, según el tiempo que lleve en SCAN, encontrará numerosas ventajas y descuentos en esta zona. De este modo, SCAN premiará la fidelidad.',
+  'staking_title' => 'Staking',
+  'staking_text' => 'Gana más SCAN bloqueando su uso.',
+];
